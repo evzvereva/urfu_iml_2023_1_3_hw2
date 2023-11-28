@@ -26,7 +26,7 @@ def load_image():
         return None
 
 
-@st.cache_resource
+@st.cache(ttl=24*3600)
 def loads_models():
     processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-large")
     model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-large")
