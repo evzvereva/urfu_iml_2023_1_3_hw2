@@ -69,3 +69,7 @@ def run_():
             os.remove("image.png")
     except FileNotFoundError:
         return "Изображение не загружено"
+
+
+load_image()
+run_()

@@ -2,3 +2,4 @@ streamlit==1.28.2
 Pillow==10.1.0
 transformers==4.35.2
 translate==3.6.1
+torch==2.1.1
